@@ -35,10 +35,6 @@ public class RegistrarActivity extends AppCompatActivity {
         autenticacion = new Autenticacion();
         conexionUsuario = new ConexionUsuario();
 
-        btnRegistrarUsuario = findViewById(R.id.);
-        inputEmail = findViewById(R.id);
-        inputContrasenia = findViewById(R.id);
-
         btnRegistrarUsuario.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -88,9 +84,9 @@ public class RegistrarActivity extends AppCompatActivity {
             public void onComplete(@NonNull Task<Void> task) {
                 if (task.isSuccessful()){
                     //FancyToast.makeText(RegistrarActividad.this, "El registro fue exitoso", FancyToast.LENGTH_LONG, FancyToast.SUCCESS, false).show();
-                    Intent intent = new Intent(RegistrarActivity.this, MapaClienteActividad.class);
-                    intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
-                    startActivity(intent);
+                    //Intent intent = new Intent(RegistrarActivity.this, MapaClienteActividad.class);
+                    //intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+                    //startActivity(intent);
                 }
                 else {
                     FancyToast.makeText(RegistrarActivity.this, "No se pudo crear el usuario", FancyToast.LENGTH_LONG, FancyToast.ERROR, false).show();

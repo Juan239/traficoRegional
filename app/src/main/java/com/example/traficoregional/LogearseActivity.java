@@ -36,10 +36,10 @@ public class LogearseActivity extends AppCompatActivity {
         autenticacion = FirebaseAuth.getInstance();
         baseDatos = FirebaseDatabase.getInstance().getReference();
 
-        correo = findViewById(R.id.);
-        contrasenia = findViewById(R.id.);
-        btnRegistrarse = findViewById(R.id.);
-        btnLoguearse = findViewById(R.id.);
+        //correo = findViewById(R.id.);
+        //contrasenia = findViewById(R.id.);
+        //btnRegistrarse = findViewById(R.id.);
+        //btnLoguearse = findViewById(R.id.);
 
         btnLoguearse.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -67,9 +67,9 @@ public class LogearseActivity extends AppCompatActivity {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if (task.isSuccessful()) {
-                            Intent intent = new Intent(LogearseActivity.this, .class);
-                            startActivity(intent);
-                            finish();
+                            //Intent intent = new Intent(LogearseActivity.this, .class);
+                            //startActivity(intent);
+                            //finish();
                         }
                         else {
                             FancyToast.makeText(LogearseActivity.this, "La contraseña debe tener al menos 6 caracteres", FancyToast.LENGTH_LONG, FancyToast.ERROR, false).show();
