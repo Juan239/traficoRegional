@@ -1,8 +1,21 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
     <style name="Base.Theme.TraficoRegional" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+        <?xml version="1.0" encoding="utf-8"?>
+        <resources>
+            <style name="LinkButton">
+                <item name="android:textColor">@color/colorPrimary</item>
+                <item name="android:textStyle">normal</item>
+                <item name="android:background">@android:color/transparent</item>
+            </style>
+            <style name="FuenteToolBar">
+                <item name="android:fontFamily">@font/fuente_secundaria</item>
+            </style>
+            <style name="ToolbarTheme" parent="ThemeOverlay.AppCompat.ActionBar">
+                <item name="colorControlNormal">@color/colorBlack</item>
+                <item name="titleTextColor">@color/colorBlack</item>
+            </style>
+        </resources>
     </style>
 
     <style name="Theme.TraficoRegional" parent="Base.Theme.TraficoRegional" />
