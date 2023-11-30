@@ -16,10 +16,10 @@
             android:name=".mapaActivity"
             android:exported="false" />
         <activity
-            android:name=".registroActivity"
+            android:name=".RegistrarActivity"
             android:exported="false" />
         <activity
-            android:name=".inicioSesionActivity"
+            android:name=".LogearseActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
